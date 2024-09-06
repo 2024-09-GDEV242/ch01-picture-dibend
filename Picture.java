@@ -11,25 +11,27 @@
  */
 public class Picture
 {
-    private Square wall;
     private Square landscape;
     private Triangle spaceship;
     private Circle moon;
-    private boolean drawn;
     private Person person;
     private Person alien1;
     private Person alien2;
     private Person alien3;
-
+    private boolean drawn;
+    
     /**
      * Constructor for objects of class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
+        landscape = new Square();
+        spaceship = new Triangle();
+        moon = new Circle();
+        person = new Person();
+        alien1 = new Person();
+        alien2 = new Person();
+        alien3 = new Person();
         drawn = false;
     }
 
