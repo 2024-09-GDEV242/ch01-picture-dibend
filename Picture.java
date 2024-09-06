@@ -6,16 +6,20 @@
  *
  * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael Kšlling and David J. Barnes
+ * @author  Michael Kï¿½lling and David J. Barnes
  * @version 2016.02.29
  */
 public class Picture
 {
     private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
+    private Square landscape;
+    private Triangle spaceship;
+    private Circle moon;
     private boolean drawn;
+    private Person person;
+    private Person alien1;
+    private Person alien2;
+    private Person alien3;
 
     /**
      * Constructor for objects of class Picture
