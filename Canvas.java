@@ -9,9 +9,9 @@ import java.util.*;
  * the BlueJ "shapes" example. 
  *
  * @author: Bruce Quig
- * @author: Michael K�lling (mik)
+ * @author: Michael K�lling (mik), David DiBenedetto
  *
- * @version 2016.02.29
+ * @version 2024.09.07
  */
 public class Canvas
 {
