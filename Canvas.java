@@ -9,7 +9,7 @@ import java.util.*;
  * the BlueJ "shapes" example. 
  *
  * @author: Bruce Quig
- * @author: Michael Kšlling (mik)
+ * @author: Michael Kï¿½lling (mik)
  *
  * @version 2016.02.29
  */
@@ -142,6 +142,9 @@ public class Canvas
         }
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
+        }
+        else if(colorString.equals("gray")) {
+            graphic.setColor(Color.gray);
         }
         else {
             graphic.setColor(Color.black);

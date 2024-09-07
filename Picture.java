@@ -12,6 +12,7 @@
 public class Picture
 {
     private Square landscape;
+    private Square sky;
     private Triangle spaceship;
     private Circle moon;
     private Person person;
@@ -26,6 +27,7 @@ public class Picture
     public Picture()
     {
         landscape = new Square();
+        sky = new Square();
         spaceship = new Triangle();
         moon = new Circle();
         person = new Person();
@@ -41,27 +43,31 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
-            
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
+            landscape.moveVertical(-600);
+            sky.changeColor("black");
+            landscape.changeSize(1000);
+            spaceship.moveVertical(20);
+            spaceship.changeColor("gray");
+            alien1.changeColor("green");
+            alien2.changeColor("green");
+            alien3.changeColor("green");
+            landscape.makeVisible();
+            spaceship.makeVisible();
+            alien1.makeVisible();
+            alien2.makeVisible();
+            alien3.makeVisible();
+            person.makeVisible();
+            alien1.slowMoveHorizontal(30);
+            alien2.slowMoveHorizontal(40);
+            alien3.slowMoveHorizontal(50);
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
     
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            moon.changeColor("yellow");
+            moon.moveHorizontal(100);
+            moon.moveVertical(-40);
+            moon.changeSize(80);
+            moon.makeVisible();
+            moon.slowMoveVertical(-30);
             drawn = true;
         }
     }
@@ -71,10 +77,12 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        alien1.changeColor("gray");
+        alien2.changeColor("gray");
+        alien3.changeColor("gray");
+        landscape.changeColor("black");
+        sky.changeColor("white");
+        moon.changeColor("black");
     }
 
     /**
@@ -82,9 +90,11 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        alien1.changeColor("green");
+        alien2.changeColor("green");
+        alien3.changeColor("green");
+        sky.changeColor("black");
+        moon.changeColor("yellow");
+        spaceship.changeColor("gray");
     }
 }
